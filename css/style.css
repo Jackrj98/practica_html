@@ -1,185 +1,263 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-
-header {
-  width: 100%;
-}
-
-header nav {
-  width: 100%;
-  margin: 10px auto;
-  background: #1976d2;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu-bar {
-  display: none;
+    display: none;
 }
 
-header nav ul {
-  overflow: hidden;
-  list-style: none;
+nav {
+    background: #1976d2;
+    width: 100%;
+    margin: 5px auto;
 }
 
-header nav ul li {
-  float: left;
+nav ul {
+    overflow: hidden;
+    list-style: none;
 }
 
-header nav ul li a {
-  color: #fff;
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
+nav ul li {
+    float: left;
 }
 
-header nav ul li a span {
-  margin-right: 10px;
+nav ul li a img {
+    width: 14%;
+    float: left;
 }
 
-header nav ul li a:hover {
-  background: #2196f3;
+nav ul li a {
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    align-content: center;
+}
+
+nav ul li a span {
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    background: #2196f3;
 }
 
 .ftco-section {
-  padding: 7em 0;
-  position: relative;
+    padding: 3em 0;
+    position: relative;
 }
 
 .container {
-  min-width: 992px !important;
+    padding: 3%;
+    margin: 5%;
 }
 
 @media screen and (max-width: 480px) {
-  header nav {
-    width: 60%;
-    height: 100%;
-    margin: 0;
-    position: fixed;
-  }
-
-  header nav ul li {
-    display: block;
-    float: none;
-  }
-
-  .menu-bar {
-    display: block;
-    width: 100%;
-    background: #1976d2;
-  }
-
-  .menu-bar .btn-menu {
-    display: block;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-    --webkit-box-sizing: border-box;
-    --moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .menu-bar .btn-menu span {
-    float: left;
-  }
+    header nav {
+        width: 60%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        background: #1976d2;
+    }
+    .menu-bar .btn-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        --webkit-box-sizing: border-box;
+        --moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu-bar .btn-menu span {
+        float: left;
+    }
 }
 
 .material-icons {
-  vertical-align: sub;
+    vertical-align: sub;
 }
 
 footer {
-  width: 100%;
-  bottom: 0;
-  align-self: flex-end;
+    width: 100%;
+    bottom: 0;
+    align-self: flex-end;
 }
 
 .footer-container {
-  width: 100%;
-  background: #1976d2;
-  color: #fff;
+    width: 100%;
+    background: #1976d2;
+    color: #fff;
 }
 
 .footer-main {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px 0;
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-main .col {
-  width: calc(100% / 3);
+    width: calc(100% / 3);
 }
 
 .footer-main .col h3 {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .footer-main .col p {
-  color: #fff;
-  margin-bottom: 20px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .footer-main .col ul {
-  list-style: none;
-  overflow: hidden;
+    list-style: none;
+    overflow: hidden;
 }
 
 .footer-main .col ul li {
-  float: inline-start;
+    float: inline-start;
 }
 
 .footer-main .col ul li a {
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .footer-main .col ul li a:hover {
-  background: #2196f3;
+    background: #2196f3;
 }
 
 .footer-main .col span {
-  display: inline-block;
+    display: inline-block;
 }
 
 .footer-main .copy {
-  padding: auto;
-  margin: auto;
+    padding: auto;
+    margin: auto;
 }
 
 .button {
-  background: #03a9f4;
-  display: inline-block;
-  color: #fff;
-  font-size: 1.25em;
-
-  padding: 10px 0;
-  text-align: center;
-  width: 200px;
-  text-decoration: none;
+    background: #03a9f4;
+    float: left;
+    color: #fff;
+    padding: 2%;
+    text-align: center;
+    width: 50%;
+    border-radius: 50px 50px 50px 50px;
+    text-decoration: none;
 }
+
+
+/*coment*/
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.single-post {
+    margin-bottom: 30px;
+}
+
+.single-post h2,
+.single-post h4 {
+    margin: 10px 0;
+    color: #232d37;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+}
+
+.single-post h2:hover,
+.single-post h4:hover {
+    color: #fc6c3f;
+}
+
+.single-post p {
+    color: #51545f;
+}
+
+.post-comment {
+    float: left;
+}
+
+.post-comment span i {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.badge-primary {
+    display: inline-block;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    background: #03A9F4;
+    size: 10%;
+    color: #fff;
+    padding: 1%;
+}
+
+.post-etiquetas {
+    display: inline-flex;
+    flex: auto;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5px;
+    padding-bottom: 3%;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.post-etiquetas span {
+    display: inline-flex;
+    flex: auto;
+    margin: 5px;
+    padding: 3%;
+    vertical-align: middle;
+}
+
