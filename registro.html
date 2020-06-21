@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
-  <link rel="icon" type="image/jpg" href="css/imagenes/logo.f4z" />
+  <link rel="icon" type="image/jpg" href="imagenes/logo.f4z" />
   <!--icon-material-desing-->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" />
@@ -19,90 +19,155 @@
 </head>
 
 <body>
-  <nav>
-    <div class="menu-bar">
-      <a href="#" class="btn-menu"><span class="material-icons">menu</span></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+    <div class="container d-flex align-items-center">
+      <a class="navbar-brand" href="index.html"><img src="imagenes/logo.f4z" style="width: 50px;"
+          alt="logo JB"><span>Galeria Imagenes</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link pl-0"><span
+                class="material-icons">home</span>Inicio</a></li>
+          <li class="nav-item"><a href="buscar.html" class="nav-link"><span
+                class="material-icons">search</span>Buscar</a></li>
+          <li class="nav-item"><a href="nueva.html" class="nav-link"><span
+                class="material-icons">add_a_photo</span>Nueva Foto</a></li>
+          <li class="nav-item"><a href="favoritas.html" class="nav-link"><span
+                class="material-icons">star</span>Favoritos</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link"><span class="material-icons">person</span>Login</a>
+          </li>
+          <li class="nav-item"><a href="registro.html" class="nav-link"><span
+                class="material-icons">person_add</span>Registro</a></li>
+          <li class="nav-item"><a href="foto.html" class="nav-link"><span class="material-icons">photo</span>Foto</a>
+          </li>
+          <li class="nav-item"><a href="acerca.html" class="nav-link"><span
+                class="material-icons">info</span>Acerca</a></li>
+        </ul>
+      </div>
     </div>
-    <ul>
-      <li class="nav-item active">
-        <a href="#" class="nav-link pl-0"><img src="css/imagenes/logo.f4z" alt="logo JB"><span>Galeria
-            Imagenes</span></a>
-      </li>
-      <li>
-        <a href="index.html"><span class="material-icons">home</span>Inicio</a>
-      </li>
-      <li>
-        <a href="buscar.html"><span class="material-icons">search</span>Buscar</a>
-      </li>
-      <li>
-        <a href="nueva.html"><span class="material-icons">add_a_photo</span>Nueva
-          Foto</a>
-      </li>
-      <li>
-        <a href="favoritas.html"><span class="material-icons">star</span>Favoritos</a>
-      </li>
-      <li>
-        <a href="login.html"><span class="material-icons">person</span>Login</a>
-      </li>
-      <li>
-        <a href="registro.html"><span class="material-icons">person_add</span>Registro</a>
-      </li>
-      <li>
-        <a href="foto.html"><span class="material-icons">photo</span>Foto</a>
-      </li>
-      <li>
-        <a href="acerca.html"><span class="material-icons">info</span>Acerca</a>
-      </li>
-    </ul>
   </nav>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-main">
-        <div class="col">
-          <h3>Navegacion</h3>
-          <ul>
-            <li>
-              <a href="index.html"><span class="material-icons">home</span>Inicio</a>
-            </li>
-            <li>
-              <a href="buscar.html"><span class="material-icons">search</span>Buscar</a>
-            </li>
-            <li>
-              <a href="nueva.html"><span class="material-icons">add_a_photo</span>Nueva Foto</a>
-            </li>
-            <li>
-              <a href="favoritas.html"><span class="material-icons">star</span>Favoritos</a>
-            </li>
-            <li>
-              <a href="login.html"><span class="material-icons">person</span>Login</a>
-            </li>
-            <li>
-              <a href="registro.html"><span class="material-icons">person_add</span>Registro</a>
-            </li>
-            <li>
-              <a href="foto.html"><span class="material-icons">photo</span>Foto</a>
-            </li>
-            <li>
-              <a href="acerca.html"><span class="material-icons">info</span>Acerca</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Informacion</h3>
-          <span class="material-icons">phone_in_talk</span>+ 0991414338
-        </div>
-        <div class="col">
-          <h3>Sobre Nosotros</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem quisquam eveniet sapiente maxime,
-            repellendus fugiat? Autem
-          </p>
+  <section class="ftco-section">
+    <div id="registro" class="container p-5">
+      <div class="row">
+          <div class="col-md-5 mx-auto">
+            <div class="wrapper fadeInDown">
+              <div id="formContent">
+                <h2 class="active"> Registro </h2>
+                <div class="fadeIn first">
+                  <img src="imagenes/logo.f4z" id="icon" alt="User Icon" />
+                </div>
+                <form>
+                  <div>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" minlength="4" maxlength="20" pattern="^[A-Za-z][A-Za-z0-9]*$" autofocus  required>
+                  </div>
+                  <div>
+                    <input type="password" id="password1" class="fadeIn third" name="password1" placeholder="Ingrese su clave" minlength="6" maxlength="20" pattern="^[A-Za-z-_][A-Za-z0-9-_]*$" required>
+                  </div>
+                  <div>
+                    <input type="password" id="password2" class="fadeIn third" name="password2" placeholder="Confirme su clave" minlength="6" maxlength="20" pattern="^[A-Za-z-_][A-Za-z0-9-_]*$">
+                  </div>
+                  <div>
+                    <input type="text" id="name" class="fadeIn second" name="name" placeholder="Ingrese sus nombres" required>
+                  </div>
+                  <div>
+                    <input type="text" id="lastname" class="fadeIn third" name="lastname" placeholder="Ingrese sus apellidos" required >
+                  </div>
+                  <div>
+                    <input type="submit" class="fadeIn fourth" value="Registro">
+                  </div>
+                </form>
+                <div id="formFooter">
+                  <h6>Ya tienes una cuenta?
+                    <a href="login.html">Login</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  </section>
 
-          <a href="acerca.html" class="button">Mas Informacion</a>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5">
+            <h2 class="ftco-heading-2">Preguntas?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Agregar calles, Quito, EC</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+090000000</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">jack.rojas@unl.edu.ec</span></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="copy">
-          <p>&copy; 2020, Todos los derechos reservados - | JB |</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5">
+            <h2 class="ftco-heading-2">Blog</h2>
+            <div class="block-21 mb-4 d-flex">
+             
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-5 d-flex">
+             
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Inicio</a></li>
+              <li><a href="buscar.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Buscar</a></li>
+              <li><a href="nueva.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Nueva</a></li>
+              <li><a href="favoritas.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Favoritos</a></li>
+              <li><a href="login.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Login</a></li>
+              <li><a href="registro.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Registro</a></li>
+              <li><a href="foto.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Foto</a></li>
+              <li><a href="acerca.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Acerca</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5">
+            <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> Derechos reservados |
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">JB</a>
+          </p>
         </div>
       </div>
     </div>
